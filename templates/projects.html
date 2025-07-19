@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>My Projects</h1>
+
+<div class="project-container">
+
+  <!-- Pet Adoption System -->
+  <div class="project-card">
+    <h3>🐶 Online Pet Adoption System</h3>
+    <p>Django + PostgreSQL based platform.</p>
+    <button onclick="openModal('modal1')">View Details</button>
+  </div>
+
+  <!-- Social Media -->
+  <div class="project-card">
+    <h3>🌐 Social Media Platform</h3>
+    <p>MERN Stack app with user profiles and posts.</p>
+    <button onclick="openModal('modal2')">View Details</button>
+  </div>
+
+  <!-- Library System -->
+  <div class="project-card">
+    <h3>📚 Library Management System</h3>
+    <p>Java + React full-stack project.</p>
+    <button onclick="openModal('modal3')">View Details</button>
+  </div>
+
+  <!-- Pharmacist Assistant -->
+  <div class="project-card">
+    <h3>💊 Pharmacist Assistant App</h3>
+    <p>Inventory & prescription management app.</p>
+    <button onclick="openModal('modal4')">View Details</button>
+  </div>
+
+</div>
+
+<!-- 🌟 Modals Section -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Online Pet Adoption System</h2>
+    <p>This Django web app allows users to adopt pets online, manage accessories, and handle user authentication with PostgreSQL integration.</p>
+    <a href="https://github.com/Visanth1249/Paws-and-pixels-" target="_blank">Visit GitHub Repo</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Social Media Platform</h2>
+    <p>A MERN stack platform that supports user login, profile creation, likes, comments, and real-time updates with responsive UI.</p>
+    <a href="https://github.com/pylalavanya/Mern_Stack_Social_Media_App" target="_blank">Visit GitHub Repo</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Library Management System</h2>
+    <p>Java backend with React UI to manage borrowing and returning books, with authentication and scalable architecture.</p>
+    <a href="https://github.com/pylalavanya/ONLINE-WEB-BASED-LIBRARY-MANAGEMENT" target="_blank">Visit GitHub Repo</a>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2>Pharmacist Assistant App</h2>
+    <p>Web app built during Google Girl Hackathon to manage prescriptions, verify stock, and provide medicine suggestions.</p>
+    <a href="https://github.com/pylalavanya/Pharmacist-Assistant-Web-App" target="_blank">Visit GitHub Repo</a>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+</script>
+
+{% endblock %}

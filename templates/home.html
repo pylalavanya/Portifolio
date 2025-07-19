@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero-section">
+
+  <div class="profile-frame">
+    <img src="{{ url_for('static', filename='images/Profile pic.jpg') }}" alt="Lavanya Profile Photo">
+  </div>
+
+<!--  <h1 class="hero-name">Pyla Lavanya</h1>-->
+  <h1 class="hero-name">I’m Pyla Lavanya</h1>
+<p class="typing-text"></p>
+
+<!--  <p class="hero-subtitle">Full Stack Developer | Data Science  | B.Tech Final Year</p>-->
+  <p class="hero-intro">
+    Passionate about building beautiful web apps, solving problems with code, and always learning something new.
+  </p>
+
+</div>
+
+{% endblock %}

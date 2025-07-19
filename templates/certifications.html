@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="text-align:center; margin-top: 50px;">Certifications</h1>
+
+<div class="certification-container">
+
+  <div class="cert-card">
+    <h3>🧰 Red Hat Certified Developer</h3>
+    <p>Red Hat EX183 – Enterprise Application Developer</p>
+    <a href="{{ url_for('static', filename='certificates/redhat_ex183.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🗄️ MongoDB Certified DBA</h3>
+    <p>Certification from MongoDB University for Database Administration.</p>
+    <a href="{{ url_for('static', filename='certificates/mongodb_dba.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🤖 Salesforce Certified AI Associate</h3>
+    <p>AI and automation focused credential from Salesforce.</p>
+    <a href="{{ url_for('static', filename='certificates/salesforce_ai.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🗣️ Linguaskill English Certification</h3>
+    <p>Cambridge Assessment – Overall B2</p>
+    <a href="{{ url_for('static', filename='certificates/linguaSkills.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+  <h2 style="text-align:center; margin-top: 50px;"> Coursera Specializations</h2>
+
+<div class="certification-container">
+
+  <div class="cert-card">
+    <h3>💡 Arm Cortex-M Architecture and Software Development</h3>
+    <p>Completed: Oct 10, 2023</p>
+    <ul>
+      <li>Arm Cortex-M Processors Overview</li>
+      <li>Armv8-M Architecture Fundamentals</li>
+      <li>Cortex-M Software Development Fundamentals</li>
+      <li>Advanced Armv8-M Features</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/ARM.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🧑‍💻 Board Infinity Java FullStack Developer</h3>
+    <p>Completed: Sept 21, 2024</p>
+    <ul>
+      <li>Java Programming, Frontend, Backend, Data Structures</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/JAVA.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🌐 Meta Front-End Developer</h3>
+    <p>Completed: Feb 13, 2024</p>
+    <ul>
+      <li>HTML, CSS, JavaScript, React, UX/UI Design, Capstone</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/META.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🗣️ IBM People & Soft Skills</h3>
+    <p>Completed: Feb 4, 2024</p>
+    <ul>
+      <li>Collaboration, Communication, Agile Delivery, Thinking Skills</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/SOFT.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>☁️ Microsoft Azure Data Fundamentals (DP-900)</h3>
+    <p>Completed: Dec 20, 2024</p>
+    <ul>
+      <li>Data Concepts, Azure SQL, Cosmos DB, Data Warehouse, Exam Prep</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/MICROSOFT AZURE.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>🌱 Spring Framework - LearnQuest</h3>
+    <p>Completed: Oct 12, 2024</p>
+    <ul>
+      <li>Spring Core, Boot, MVC, Cloud, Repositories</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/Spring.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="cert-card">
+    <h3>📊 SAS Statistical Business Analyst</h3>
+    <p>Completed: Dec 8, 2023</p>
+    <ul>
+      <li>Hypothesis Testing, Regression, Predictive Modeling</li>
+    </ul>
+    <a href="{{ url_for('static', filename='certificates/SAS.pdf') }}" target="_blank">View Certificate</a>
+  </div>
+
+</div>
+
+
+</div> <!-- 🔥 THIS LINE WAS MISSING -->
+
+{% endblock %}
